@@ -10,6 +10,7 @@ dat-Turing-Machine
 ###Notes:
 * This is not a _real_ Turing machine, the tape head should stay fixed, while the tape moves...
 * It does not check the correctness of any input at all.
+* BUG. The head stops one step before it should.
 
 ###Why?:
 It's cool ;D BTW, this grammar doesn't do anything particulary interesting. It's supposed to change all 0s to 1s and vice-versa, and place the reading head in the first element, so where it started.
