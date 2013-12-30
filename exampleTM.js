@@ -42,6 +42,7 @@ var TMFrontend = function(tape, grammar){
 		}catch(error){
 			$('.alert').html('Halt state reached. Stopped.');
 			$('.alert').css({'color':'red'});
+			return -1
 		}
 	 	
 		this.cleanCursor();
