@@ -3,11 +3,11 @@ dat-Turing-Machine
 
 ###About
 
-`A Turing machine is a hypothetical device that manipulates symbols on a strip of tape according to a table of rules. Despite its simplicity, a Turing machine can be adapted to simulate the logic of any computer algorithm, and is particularly useful in explaining the functions of a CPU inside a computer.` @Wikipedia
+"A Turing machine is a hypothetical device that manipulates symbols on a strip of tape according to a table of rules. Despite its simplicity, a Turing machine can be adapted to simulate the logic of any computer algorithm, and is particularly useful in explaining the functions of a CPU inside a computer." @Wikipedia
 
 ###Notes:
 
-*This is not a `real` Turing machine, the tape head should stay fixed, while the tape moves...
+*This is not a __real__ Turing machine, the tape head should stay fixed, while the tape moves...
 
 *It does not check the correctness of any input at all.
 
