@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<title>Turing Machine simulator.</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+		<script type="text/javascript" src="TM.js"></script>
+		<script type="text/javascript" src="exampleTM.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="TM">
+				<div class="_tape">
+					<table>
+						<tr class="tape">
+						</tr>
+						<tr class="cursor">
+							
+						</tr>
+					</table>
+				</div>
+
+
+
+				<div class="buttons">
+					<button id="load">Load</button>
+					<button id="run">Step</button>
+					<input id="step" type="text" value="1"/>
+				</div>
+				<div class="alert">
+					Ready to read...
+				</div>
+			</div>
+
+			<div class="miniLISP">
+			<!--<textarea id="TMinput">
+
+
+
+				tape = ['1', '0', '1', '1', '1', '0', '1']
+				grammar =['q0', 'STOP', {
+						'q0': [['1', '0', 'R', 'q0'],
+						      ['0', '1', 'R', 'q0'],
+						      [undefined, undefined, 'L', 'STOP']],
+						'q1': [['1', '1', 'L', 'q1'],
+						      ['0', '0', 'L', 'q1'],
+						      [undefined, undefined, 'R', 'STOP']],
+				}];
+
+
+
+			</textarea>-->
+
+			</div>
+
+			<div class="info">
+				<p><h2>About</h2>`A Turing machine is a hypothetical device that manipulates symbols on a strip of tape according to a table of rules. Despite its simplicity, a Turing machine can be adapted to simulate the logic of any computer algorithm, and is particularly useful in explaining the functions of a CPU inside a computer.`  <a href="http://en.wikipedia.org/wiki/Turing_machine">@Wikipedia</a></p>
+				<p><h2>Notes:</h2> 
+					<p>*This is not a `real` Turing machine, the tape head should stay fixed, while the tape moves...</p>
+					<p>*It does not check the correctness of any input at all.</p>
+				</p>
+				<p><h2>Why?:</h2> 
+					It's cool ;D BTW, this grammar doesn't do anything particulary interesting. It's supposed to change all 0s to 1s and vice-versa, and place the reading head in the first element, so where it started.
+				</p>
+			</div>
+		</div>
+	</body>
+
+
+	<style>
+		html {
+			font-family: Helvetica;
+			background-color: white;
+		}
+
+		body {
+			width: 100%;
+		}
+
+		table{
+
+			border: 1px solid rgb(138, 138, 138);
+			float: left;
+			-webkit-box-shadow: 1px 1px rgb(187, 187, 187);
+			-webkit-border-radius: 2px;
+		}
+		._tape{
+			width: 100%;
+			height: 50px;
+			margin-bottom: 50px;
+		}
+		.tape > td {
+			float: left;
+			border-right: 1px solid grey;
+			padding: 2px;
+		}
+		.tape > td:last-child{
+			border-right: none !important;
+			color: rgba(0, 0, 0, 0.45)
+		}	
+		.tape > td:first-child{
+			color: rgba(0, 0, 0, 0.45)
+		}			
+		.info {
+			margin-top: 60px;
+			width: 100%;
+			float: left;
+		}
+		.buttons {
+			width: 300px;
+			float: left;
+		}
+		.alert{
+			float: left;
+			text-decoration: underline;
+		}
+		textarea{
+			border: 1px solid black;
+		}
+
+		.wrapper{
+			margin-top: 50px;
+			width: 700px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		h2{
+			margin-left: -20px;
+		}
+	</style>
+
+
+	<!-- Create a simple CodeMirror instance 
+	<link rel="stylesheet" href="https://rawgithub.com/marijnh/CodeMirror/master/lib/codemirror.css">
+	<script src="https://rawgithub.com/marijnh/CodeMirror/master/lib/codemirror.js"></script>
+	<script>
+	
+	  var editor = CodeMirror.fromTextArea(document.getElementById("TMinput"), {
+	    mode: "text/html"
+	  });
+
+	</script>-->
+
+
+</html>
