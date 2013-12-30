@@ -7,7 +7,7 @@ dat-Turing-Machine
 
 ###Notes:
 
-*This is not a __real__ Turing machine, the tape head should stay fixed, while the tape moves...
+*This is not a _real_ Turing machine, the tape head should stay fixed, while the tape moves...
 
 *It does not check the correctness of any input at all.
 
