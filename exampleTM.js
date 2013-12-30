@@ -37,8 +37,12 @@ var TMFrontend = function(tape, grammar){
 		if(tm.state === null){
 			tm.state = tm.grammar[0];
 		}
-
-		var head = tm.read(tm.state);
+		try{
+			var head = tm.read(tm.state);
+		}catch(error){
+			$('.alert').html('Halt state reached. Stopped.');
+			$('.alert').css({'color':'red'});
+		}
 	 	
 		this.cleanCursor();
 		
