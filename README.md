@@ -1,4 +1,4 @@
-dat-Turing-Machine
+dat-turing-machine
 ==================
 
 => Check it out [here](https://rawgithub.com/javierhonduco/dat-Turing-Machine/master/index.html).
