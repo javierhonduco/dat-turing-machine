@@ -40,6 +40,7 @@ var TMFrontend = function(tape, grammar){
 		try{
 			var head = tm.read(tm.state);
 		}catch(error){
+			console.log(error);
 			$('.alert').html('Halt state reached. Stopped.');
 			$('.alert').css({'color':'red'});
 			return -1
