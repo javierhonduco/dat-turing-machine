@@ -9,9 +9,6 @@ grammar =['q0', 'STOP', {
 }];
 
 
-
-
-
 var TMFrontend = function(tape, grammar){
 	this.TM = new TuringMachine(tape, grammar);
 
@@ -71,27 +68,13 @@ var TMFrontend = function(tape, grammar){
 
 
 $(document).ready(function(){
-
 	tmf = new TMFrontend(tape, grammar);
 	tmf.load('.tape', '.cursor');
-
-
-
-	/*$('#load').click(function(){
-
-	});*/
 
 	$('#run').click(function(){
 		
 		for (var i = 0; i < parseInt($('#step').val()); i++) {
 			tmf.run()
 		}
-
 	});
-
-
 });
-//(function(){
-
-
-//})();
